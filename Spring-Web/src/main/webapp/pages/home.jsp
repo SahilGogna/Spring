@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Hi, I am a web page created by ${name}</h1>
+	<h1>Hello, I am a web page created by ${obj.aname} using ${obj.lang}</h1>
 </body>
 </html>
