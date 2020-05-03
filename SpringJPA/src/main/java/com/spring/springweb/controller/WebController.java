@@ -33,5 +33,26 @@ public class WebController {
 		mv.addObject(user);
 		return mv;
 	}
+	
+	@RequestMapping("/deleteUser")
+	public String deleteUser(@RequestParam int uid) {
+		repo.deleteById(uid);
+		return "home.jsp";
+	}
+	
+	@RequestMapping("/updateUser")
+	public String updateUser(User user) {
+		repo.deleteById(user.getUid());
+		repo.save(user);
+		return "home.jsp";
+	}
+	
+	@RequestMapping("/getCustomData")
+	public String getCustomData() {
+		System.out.println(repo.findByUname("Java"));
+		System.out.println(repo.findByUidGreaterThan(102));
+		System.out.println(repo.findByUnameSorted("Java"));
+		return "home.jsp";
+	}
 
 }

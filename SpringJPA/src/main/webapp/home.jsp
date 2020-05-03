@@ -13,11 +13,43 @@
 			name="uname"><br> <input type="text" name="tech"><br>
 		<input type="submit"><br>
 	</form>
+	
+	<br>
+	<br>
+	<br>
 
 
 	<form action="getUser">
 		<input type="text" name="uid"><br> <input type="submit"><br>
 	</form>
+	
+	<br>
+	<br>
+	<br>
+
+	<form action="deleteUser">
+		<input type="text" name="uid"><br>
+		<input type="submit">Delete<br>
+	</form>
+	
+	<br>
+	<br>
+	<br>
+	
+	<form action="updateUser">
+		<input type="text" name="uid">
+		<br> <input type="text" name="uname"><br> 
+		<input type="text" name="tech"><br>
+		<input type="submit"><br>
+	</form>
+	
+	<form action="getCustomData">
+		<input type="submit" value="Press me"><br>
+	</form>
+	
+	<br>
+	<br>
+	<br>
 
 </body>
 </html>
